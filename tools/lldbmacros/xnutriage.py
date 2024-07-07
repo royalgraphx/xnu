@@ -89,7 +89,7 @@ def parseLR(cmd_args=None):
             paniclog_data += returnfunc("\n(lldb) paniclog\n", "paniclog")
 
     if panic_found == 1:
-        srch_string = "lr:\s+0x[a-fA-F0-9]+\s"
+        srch_string = "lr:\\s+0x[a-fA-F0-9]+\\s"
         lr_pc_srch = re.findall(srch_string, paniclog_data)
         if lr_pc_srch:
             print(paniclog_data, lr_pc_srch)
@@ -110,7 +110,7 @@ def parseLRfromfile(cmd_args=None):
     """
     f = open('/tmp/lrparsefile', 'r')
     parse_data= f.read()
-    srch_string = "lr:\s+0x[a-fA-F0-9]+\s"
+    srch_string = "lr:\\s+0x[a-fA-F0-9]+\\s"
     lr_pc_srch = re.findall(srch_string, parse_data)
     if lr_pc_srch:
         print(paniclog_data, lr_pc_srch)

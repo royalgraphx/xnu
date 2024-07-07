@@ -265,7 +265,7 @@ Application Specific Information:
 Synthetic crash log generated from Kernel userstacks
 
 """
-    user_lib_rex = re.compile("([0-9a-fx]+)\s-\s([0-9a-fx]+)\s+(.*?)\s", re.IGNORECASE|re.MULTILINE)
+    user_lib_rex = re.compile("([0-9a-fx]+)\\s-\\s([0-9a-fx]+)\\s+(.*?)\\s", re.IGNORECASE|re.MULTILINE)
     from datetime import datetime
     if pval:
         ts = datetime.fromtimestamp(int(pval.p_start.tv_sec))

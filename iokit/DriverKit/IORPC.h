@@ -267,4 +267,6 @@ struct OSClassDescription {
 	char        metaMethodNames[0];
 };
 
+IORPCMessage *IORPCMessageFromMach(IORPCMessageMach * msg, bool reply);
+
 #endif /* _IORPC_H */

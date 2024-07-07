@@ -36,6 +36,10 @@
 #ifndef __IOKIT_IORETURN_H
 #define __IOKIT_IORETURN_H
 
+#include <IOKit/IORPC.h>
+IORPCMessage *
+IORPCMessageFromMach(IORPCMessageMach * msg, bool reply);
+
 #ifdef __cplusplus
 extern "C" {
 #endif
