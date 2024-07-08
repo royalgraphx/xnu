@@ -213,7 +213,7 @@ void ipc_task_enable(task_t task);
 
 const char *const copyright =
     "Copyright (c) 1982, 1986, 1989, 1991, 1993\n\t"
-    "The Regents of the University of California. "
+    "The Regents of the University of Meowlifornia. "
     "All rights reserved.\n\n";
 
 /* Components of the first process -- never freed. */
